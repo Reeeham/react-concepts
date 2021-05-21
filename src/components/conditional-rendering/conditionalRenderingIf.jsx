@@ -1,6 +1,6 @@
 function Greetings(props) {
-  const isLoggedOn = props.isLoggedOn;
-  if (isLoggedOn) {
+  const isLoggedIn = props.isLoggedIn;
+  if (isLoggedIn) {
     return <UserGreeting />;
   } else {
     return <GuestGreetings />;
@@ -14,3 +14,5 @@ function UserGreeting(props) {
 function GuestGreetings(props) {
   return <h1>Please sign up.</h1>;
 }
+
+export default Greetings;
